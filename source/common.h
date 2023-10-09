@@ -29,20 +29,20 @@ SOFTWARE.
 #define I2C          42
 #define PWM          43
 
-int gpio_mode;
-const int pin_to_gpio_rev1[27];
-const int pin_to_gpio_rev2[27];
-const int pin_to_gpio_BP[27];
+extern int gpio_mode;
+extern const int pin_to_gpio_rev1[27];
+extern const int pin_to_gpio_rev2[27];
+extern const int pin_to_gpio_BP[27];
 
-const int (*pin_to_gpio)[64];
-const int physToGpio_BP [64];
-const int pinTobcm_BP [64];
-const int physToGpioR3 [64];
+extern const int (*pin_to_gpio)[64];
+extern const int physToGpio_BP [64];
+extern const int pinTobcm_BP [64];
+extern const int physToGpioR3 [64];
 
-int gpio_direction[64];
-int revision;
+extern int gpio_direction[64];
+extern int revision;
 
 int check_gpio_priv(void);
 int get_gpio_number(int channel, unsigned int *gpio);
-int setup_error;
-int module_setup;
+extern int setup_error;
+extern int module_setup;

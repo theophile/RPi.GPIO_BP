@@ -103,6 +103,8 @@ const int physToGpioR3 [64] =//head num map to BCMpin
 	-1, -1, -1, -1, -1, -1, -1, // ... 63
 } ;
 
+const int (*pin_to_gpio)[64];
+int gpio_direction[64];
 int setup_error = 0;
 int module_setup = 0;
 int revision = -1;
